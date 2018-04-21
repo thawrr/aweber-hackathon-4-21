@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using WebApplication1.models;
 
 namespace WebApplication1
 {
@@ -11,6 +12,9 @@ namespace WebApplication1
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            List<SubscribersForList> getAllSubscribers = new List<SubscribersForList>();
+
+            getAllSubscribers = SubscribersForList.getAllSubscribersFromAllLists();
 
         }
     }
