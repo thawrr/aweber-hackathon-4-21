@@ -12,6 +12,8 @@
     <form id="form1" runat="server">
         <div>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                <asp:ScriptManager ID="ScriptManager1" EnablePageMethods="True" runat="server"></asp:ScriptManager>
+
             </asp:ContentPlaceHolder>
         </div>
     </form>
