@@ -44,10 +44,16 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=18.1.0.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <HintPath>..\packages\AjaxControlToolkit.18.1.0\lib\net40\AjaxControlToolkit.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.8.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="S22.Imap, Version=3.6.0.50130, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\S22.Imap.PullReq-96.3.6.0.50130\lib\net40\S22.Imap.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -77,6 +83,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="adminReport.aspx" />
+    <Content Include="Examples.xml" />
+    <Content Include="TagSearch.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -94,11 +102,19 @@
     <Compile Include="adminReport.aspx.designer.cs">
       <DependentUpon>adminReport.aspx</DependentUpon>
     </Compile>
+    <Compile Include="models\CompanyAccount.cs" />
+    <Compile Include="models\MergeModalClass.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TagSearch.aspx.cs">
+      <DependentUpon>TagSearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TagSearch.aspx.designer.cs">
+      <DependentUpon>TagSearch.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="cSharp Classes\" />
-    <Folder Include="models\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
