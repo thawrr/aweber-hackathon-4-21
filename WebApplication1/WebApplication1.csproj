@@ -139,9 +139,11 @@
     <Compile Include="adminReport.aspx.designer.cs">
       <DependentUpon>adminReport.aspx</DependentUpon>
     </Compile>
+    <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="cSharp Classes\RequestToken.cs" />
     <Compile Include="cSharp Classes\Startup1.cs" />
-    <Compile Include="models\CompanyAccount.cs" />
+    <Compile Include="Extensions\OwinContextExtensions.cs" />
+    <Compile Include="models\GetLinks.cs" />
     <Compile Include="models\MergeModalClass.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TagSearch.aspx.cs">
