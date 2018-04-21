@@ -5,7 +5,9 @@ using System.Web;
 
 namespace WebApplication1.models
 {
-    public class CompanyAccount
+    public class UpdateSubscriber
     {
+      public string email { get; set; },
+      public string tag { get; set; }
     }
 }
