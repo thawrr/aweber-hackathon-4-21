@@ -118,6 +118,10 @@
     <Compile Include="adminReport.aspx.designer.cs">
       <DependentUpon>adminReport.aspx</DependentUpon>
     </Compile>
+    <Compile Include="models\GetLinks.cs" />
+    <Compile Include="models\GetSubscribersForList.cs" />
+    <Compile Include="models\GetTag.cs" />
+    <Compile Include="models\UpdateSubscriber.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TagSearch.aspx.cs">
       <DependentUpon>TagSearch.aspx</DependentUpon>
@@ -129,7 +133,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="cSharp Classes\" />
-    <Folder Include="models\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
