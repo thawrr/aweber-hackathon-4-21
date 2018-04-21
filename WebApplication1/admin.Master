@@ -1,21 +1,50 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="admin.master.cs" Inherits="WebApplication1.admin" %>
-
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc1" %>
 <!DOCTYPE html>
 
 <html>
 <head runat="server">
-    <title></title>
+    <title>AWeber HackAThon Home Page</title>
+    <meta name="Description" content="This page displays the master tag list and will manipulate all tags.">
+    <meta name="author" content="Developed by Nathan Wilson and Johnny G.">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
+
 <body>
+
+    <style>
+        body {
+    font-family: "Source Sans Pro",Verdana,Arial,sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    background-color: white;
+}
+        container-fluid {
+            background-color: white;
+}
+        headButton {
+    font-style: normal;
+    font-weight: 200;
+        }
+    </style>
     <form id="form1" runat="server">
         <div>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-                <asp:ScriptManager ID="ScriptManager1" EnablePageMethods="True" runat="server"></asp:ScriptManager>
+
 
             </asp:ContentPlaceHolder>
         </div>
     </form>
+        <footer>
+            AWeber Hack-a-thon
+        </footer>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 </html>
